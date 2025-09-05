@@ -46,3 +46,27 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 </div>
+
+<script>
+(function () {
+  function apply() {
+    var el = document.getElementById('brand-title');
+    if (!el) return;
+    if (el.querySelector('.capword')) return; // already done
+
+    var words = el.textContent.trim().split(/\s+/).filter(Boolean);
+    el.innerHTML = words.map(function (w) {
+      return '<span class="capword">' + w + '</span>';
+    }).join(' ');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', apply);
+  } else {
+    apply();
+  }
+})();
+</script>
+
+
+
