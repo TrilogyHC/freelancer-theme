@@ -522,7 +522,7 @@ footer .footer-below {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   /* responsive link size */
-  font-size: clamp(12px, 1.3vw, 15px) !important;
+  font-size: clamp(14px, 1.3vw, 17px) !important;
   line-height: 1.2;
 }
 
