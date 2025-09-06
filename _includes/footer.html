@@ -1,72 +1,35 @@
 <!-- Footer -->
 <footer class="text-center">
-  <div class="footer-above">
+  <!-- Added inline padding to make it symmetric top/bottom -->
+  <div class="footer-above" style="padding:50px 0;">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.location }}</h3>
-          <p>
-            {% for adress in site.address %}
-            {{ adress.line }} <br>
-            {% endfor %}
+        <div class="col-lg-8 col-lg-offset-2">
+          <p style="margin:0 0 8px 0;">
+            <strong>Phone:</strong>
+            <a href="tel:+14103758418">410.375.8418</a>
           </p>
-        </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.social }}</h3>
-          <ul class="list-inline">
-            {% for network in site.social %}
-            <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.credits }}</h3>
-          <p>{{ site.credits }}</p>
+          <p style="margin:0 0 8px 0;">
+            <strong>Email:</strong>
+            <a href="mailto:info@trilogyhealthcoaching.com">info@trilogyhealthcoaching.com</a>
+          </p>
+          <p style="margin:0;">
+            <strong>Optavia Website:</strong>
+            <a href="https://coach.optavia.com/go" target="_blank" rel="noopener">https://coach.optavia.com/go</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer-below">
+
+  <!-- Keep lower band; explicit inline padding for consistency -->
+  <div class="footer-below" style="padding:25px 0;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
+          &copy; {{ site.title }} {{ site.time | date: '%Y' }}. All rights reserved.
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>
-
-<script>
-(function () {
-  function apply() {
-    var el = document.getElementById('brand-title');
-    if (!el) return;
-    if (el.querySelector('.capword')) return; // already done
-
-    var words = el.textContent.trim().split(/\s+/).filter(Boolean);
-    el.innerHTML = words.map(function (w) {
-      return '<span class="capword">' + w + '</span>';
-    }).join(' ');
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', apply);
-  } else {
-    apply();
-  }
-})();
-</script>
-
-
-
