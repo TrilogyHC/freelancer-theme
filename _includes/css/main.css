@@ -122,6 +122,17 @@ header .intro-text .skills {
   margin: 0.05em 0 0 0 !important;
 }
 
+header .intro-text .tagline {
+  font-family: 'Marcellus', serif; /* keep this if you want Marcellus instead of Allura */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  font-size: clamp(24px, 2.9vw, 32px) !important; /* match .skills */
+  line-height: 1.22 !important;
+  margin: 0.05em 0 0 0 !important;
+}
+
 /* Bigger first letter of EACH word in just the Name line */
 #brand-title .capword { display: inline-block; }
 #brand-title .capword::first-letter {
@@ -142,6 +153,10 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+
+  header .intro-text .tagline {
+    font-size: 1.75em; /* match .skills again */
+  }
 }
 
 @media(min-width:768px) {
