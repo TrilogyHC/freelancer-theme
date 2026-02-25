@@ -765,6 +765,11 @@ footer .footer-below {
   text-decoration: none;
 }
 
+#metabolic-details .btn-quiz-green:hover,
+#metabolic-details .btn-quiz-green:focus {
+  color: #2c5835;
+}
+
 /* --- Featured Video Section --- */
 #featured-video {
   padding: 60px 0;
