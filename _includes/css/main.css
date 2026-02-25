@@ -393,7 +393,8 @@ footer {
 }
 
 footer h3 {
-    margin-bottom: 30px;
+    font-size: 30pt;
+    margin-bottom: 16px;
 }
 
 footer .footer-above {
@@ -546,6 +547,318 @@ footer .footer-below {
   .navbar-default .navbar-nav > li > a {
     font-size: 14px !important;
   }
+}
+
+/* =====================================================
+   Trilogy PDF Mockup — Feb 2026 additions
+   ===================================================== */
+
+/* --- Metabolic Info Section (3-col explainer) --- */
+#metabolic-info {
+  padding: 60px 0 40px;
+  background: #fff;
+}
+
+#metabolic-info h3 {
+  font-size: 30pt;
+  color: #2c5835;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+#metabolic-info .info-col p {
+  font-size: 14pt;
+}
+
+#metabolic-info .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;   /* all columns grow to the tallest column's height */
+}
+
+#metabolic-info .info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#metabolic-info .info-col img {
+  width: 100%;
+  height: auto;           /* show full square image — no cropping */
+  display: block;
+  margin-top: auto;       /* pushes image to bottom of its column, aligning
+                             top edges across all equal-height columns */
+  border-radius: 4px;
+  background: #dce8d4;    /* placeholder tint if image is missing */
+}
+
+/* --- Metabolic Assessment CTA band --- */
+.metabolic-cta-band {
+  background: #2c5835;
+  padding: 28px 0;
+  text-align: center;
+}
+
+.metabolic-cta-band .btn-assessment {
+  display: inline-block;
+  padding: 14px 36px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+
+.metabolic-cta-band .btn-assessment:hover,
+.metabolic-cta-band .btn-assessment:focus {
+  background: #fff;
+  color: #2c5835;
+  text-decoration: none;
+}
+
+/* --- Metabolic Details Section (Signs / Offer / For You) --- */
+#metabolic-details {
+  padding: 50px 0 40px;
+  background: #f4f8f2;
+}
+
+#metabolic-details h4 {
+  font-size: 30pt;
+  color: #2c5835;
+  margin-bottom: 12px;
+}
+
+#metabolic-details h5 {
+  font-size: 18pt;
+  color: #233140;
+  margin: 10px 0 8px;
+  text-transform: uppercase;
+}
+
+#metabolic-details p {
+  font-size: 14pt;
+}
+
+#metabolic-details ul {
+  padding-left: 18px;
+  font-size: 14pt;
+}
+
+#metabolic-details ul li {
+  margin-bottom: 6px;
+}
+
+#metabolic-details .checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+#metabolic-details .checklist li::before {
+  content: "✓ ";
+  color: #2c5835;
+  font-weight: bold;
+}
+
+#metabolic-details .offer-icon-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+#metabolic-details .offer-icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.offer-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+#metabolic-details .results-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+#metabolic-details .results-list li {
+  margin-bottom: 6px;
+}
+
+#metabolic-details .results-list li::before {
+  content: "• ";
+  color: #2c5835;
+  font-weight: bold;
+}
+
+#metabolic-details .footnote {
+  font-size: 11px;
+  color: #666;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+#metabolic-details .closing-tagline {
+  text-align: center;
+  font-style: italic;
+  color: #444;
+  font-size: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Push footnotes/citations to the bottom of each equal-height column */
+#metabolic-details .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#metabolic-details .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  float: none;
+}
+
+.footnote-anchor {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+/* Quiz button — dark green pill, matches site button convention */
+.btn-quiz-green {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2c5835;
+  border: 2px solid #2c5835;
+  color: #fff;
+  border-radius: 30px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.4;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+#metabolic-details .btn-quiz-green,
+#metabolic-details .btn-quiz-green:visited {
+  color: #fff;
+}
+
+.btn-quiz-green:hover,
+.btn-quiz-green:focus {
+  background: transparent;
+  color: #2c5835;
+  text-decoration: none;
+}
+
+#metabolic-details .btn-quiz-green:hover,
+#metabolic-details .btn-quiz-green:focus {
+  color: #2c5835;
+}
+
+/* --- Featured Video Section --- */
+#featured-video {
+  padding: 60px 0;
+  background: #fff;
+}
+
+#featured-video h3 {
+  text-align: center;
+  color: #2c5835;
+  margin-bottom: 24px;
+  font-size: 1.2em;
+}
+
+/* --- Testimonial Pill Captions --- */
+.testimonial-caption {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #2c5835;
+  color: #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.testimonial-caption a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.testimonial-item {
+  margin-bottom: 36px;
+}
+
+/* --- Team / About Section --- */
+#about {
+  background: #f4f8f2;    /* same light green-tint as #metabolic-details */
+  color: #333;            /* dark body text (replaces section.success white) */
+}
+
+#about h2 {
+  color: #2c5835;         /* green heading — matches metabolic section headings */
+}
+
+#about p {
+  font-size: 14pt;        /* matches body text size used in metabolic sections */
+}
+
+/* --- Pre-footer CTA Section --- */
+#cta-section {
+  background: #2c5835;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#cta-section h2 {
+  color: #fff;
+  font-size: clamp(1.6em, 4vw, 2.6em);
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+#cta-section .btn-assessment {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #7ba856;
+  border: 2px solid #7ba856;
+  color: #fff;
+  border-radius: 30px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+#cta-section .btn-assessment:hover,
+#cta-section .btn-assessment:focus {
+  background: #fff;
+  border-color: #fff;
+  color: #2c5835;
+  text-decoration: none;
 }
 
 /* Slimmer navbar (desktop/tablet) */
